@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Menu, Bell, Search } from 'lucide-react'
+import { Menu, Bell, Search, Code2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -54,8 +54,8 @@ export default function Header({ onMenuClick }: HeaderProps) {
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
-            TM
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+            <Code2 className="h-5 w-5" />
           </div>
           <span className="hidden font-bold sm:inline-block">
             Task Manager

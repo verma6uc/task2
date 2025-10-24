@@ -9,6 +9,7 @@ import {
   BarChart3,
   Tag,
   X,
+  Code2,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
@@ -66,8 +67,8 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
       >
         <div className="flex h-16 items-center justify-between border-b px-4 md:hidden">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
-              TM
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+              <Code2 className="h-5 w-5" />
             </div>
             <span className="font-bold">Task Manager</span>
           </div>
